@@ -124,6 +124,7 @@ export class Renderer {
     page.evaluateOnNewDocument('customElements.forcePolyfill = true');
     page.evaluateOnNewDocument('ShadyDOM = {force: true}');
     page.evaluateOnNewDocument('ShadyCSS = {shimcssproperties: true}');
+    page.evaluateOnNewDocument('Rendertron = true');
 
     await page.setRequestInterception(true);
 
